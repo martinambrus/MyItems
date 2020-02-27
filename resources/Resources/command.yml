@@ -1,0 +1,322 @@
+Command:
+  MyItems_Help:
+    Aliases:
+    - "Help"
+  MyItems_About:
+    Aliases:
+    - "About"
+  MyItems_Reload: 
+    Permission: "myitems.command.reload"
+    Aliases:
+    - "Reload"
+  MyItems_Save:
+    Permission: "myitems.command.save"
+    Aliases:
+    - "Save"
+  MyItems_Remove:
+    Permission: "myitems.command.remove"
+    Aliases:
+    - "Remove"
+    - "Rem"
+  MyItems_List:
+    Permission: "myitems.command.list"
+    Aliases:
+    - "List"
+  MyItems_Load: 
+    Permission: "myitems.command.load"
+    Aliases:
+    - "Load"
+    - "Give"
+  MyItems_Load_Custom:
+    Permission: "myitems.command.load"
+    Aliases:
+    - "Custom"
+    - "CustomItem"
+    - "Custom_Item"
+  MyItems_Load_Generator:
+    Permission: "myitems.command.load"
+    Aliases:
+    - "Generator"
+    - "Generate"
+    - "Gen"
+  MyItems_Load_Set:
+    Permission: "myitems.command.load"
+    Aliases:
+    - "Set"
+    - "SetItem"
+    - "ItemSet"
+  MyItems_Drop:
+    Permission: "myitems.command.drop"
+    Aliases: 
+    - "Drop"
+    - "Drops"
+  MyItems_Drop_Custom:
+    Permission: "myitems.command.drop"
+    Aliases:
+    - "Custom"
+    - "CustomItem"
+    - "Custom_Item"
+  MyItems_Drop_Generator:
+    Permission: "myitems.command.drop"
+    Aliases:
+    - "Generator"
+    - "Generate"
+    - "Gen"
+  MyItems_Drop_Set:
+    Permission: "myitems.command.drop"
+    Aliases:
+    - "Set"
+    - "SetItem"
+    - "ItemSet"
+  MyItems_Amount:
+    Permission: "myitems.command.amount"
+    Aliases:
+    - "Amount"
+    - "Total"
+  MyItems_Data:
+    Permission: "myitems.command.data"
+    Aliases:
+    - "Data"
+  MyItems_Material:
+    Permission: "myitems.command.material"
+    Aliases:
+    - "Material"
+  MyItems_Detail:
+    Aliases:
+    - "Det"
+    - "Detail"
+  MyItems_Stats:
+    Aliases:
+    - "Stats"
+    - "Status"
+  MyItems_Simulation:
+    Aliases:
+    - "Simulation"
+    - "Damage"
+    - "DamageResult"
+    - "Result"
+    - "FinalDamage"
+  MyItems_Repair:
+    Permission: "myitems.command.repair"
+    Aliases:
+    - "Repair"
+    - "Rep"
+  MyItems_Name:
+    Permission: "myitems.command.name"
+    Aliases:
+    - "Name"
+    - "SetName"
+    - "SetDisplayName"
+  MyItems_Lore_Set:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "SetLore"
+  MyItems_Lore_Insert:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "InLore"
+    - "InsertLore"
+  MyItems_Lore_Add:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "AddLore"
+  MyItems_Lore_Remove:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "RemLore"
+    - "RemoveLore"
+  MyItems_Lore_Clear:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "ClearLore"
+  MyItems_Flag_Add:
+    Permission: "myitems.command.flag"
+    Aliases:
+    - "AddFlag"
+    - "AddFlags"
+  MyItems_Flag_Remove:
+    Permission: "myitems.command.flag"
+    Aliases:
+    - "RemFlag"
+    - "RemFlags"
+    - "RemoveFlags"
+  MyItems_Flag_Clear:
+    Permission: "myitems.command.flag"
+    Aliases:
+    - "CFlag"
+    - "ClearFlags"
+  MyItems_Enchant_Add:
+    Permission: "myitems.command.enchant" 
+    Aliases:
+    - "AddEnchant"
+    - "AddEnchantment"
+  MyItems_Enchant_Remove:
+    Permission: "myitems.command.enchant"
+    Aliases:
+    - "RemEnchant"
+    - "RemoveEnchant"
+    - "RemEnchantment"
+    - "RemoveEnchantment"
+  MyItems_Enchant_Clear:
+    Permission: "myitems.command.enchant"
+    Aliases:
+    - "ClearEnchant"
+    - "ClearEnchantment"
+  MyItems_Unbreakable:
+    Permission: "myitems.command.unbreakable"
+    Aliases:
+    - "Unbreak"
+    - "Unbreakable"
+  Lore_Set:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "Set"
+    - "SetLore"
+  Lore_Insert:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "In"
+    - "Insert"
+    - "InLore"
+    - "InsertLore"
+  Lore_Add:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "Add"
+    - "AddLore"
+  Lore_Remove:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "Rem"
+    - "Remove"
+    - "RemLore"
+    - "RemoveLore"
+  Lore_Clear:
+    Permission: "myitems.command.lore"
+    Aliases:
+    - "Clear"
+    - "ClearLore"
+  Flag_Add:
+    Permission: "myitems.command.flag"
+    Aliases:
+    - "Add"
+    - "AddFlag"
+  Flag_Remove:
+    Permission: "myitems.command.flag"
+    Aliases:
+    - "Rem"
+    - "Remove"
+    - "RemFlag"
+    - "RemoveFlag"
+  Flag_Clear:
+    Permission: "myitems.command.flag"
+    Aliases:
+    - "Clear"
+    - "ClearFlag"
+  Enchant_Add:
+    Permission: "myitems.command.enchant" 
+    Aliases:
+    - "Add"
+    - "AddEnchantment"
+  Enchant_Remove:
+    Permission: "myitems.command.enchant" 
+    Aliases:
+    - "Rem"
+    - "Remove"
+    - "RemEnchant"
+    - "RemoveEnchant"
+  Enchant_Clear:
+    Permission: "myitems.command.enchant" 
+    Aliases:
+    - "Clear"
+    - "ClearEnchant"
+  Attribute_Stats:
+    Permission: "myitems.command.attribute.stats" 
+    Aliases:
+    - "Stat"
+    - "Stats"
+    - "Status"
+  Attribute_Element:
+    Permission: "myitems.command.attribute.element"
+    Aliases:
+    - "Element"
+    - "Elements"
+    - "Ele"
+  Attribute_Buff:
+    Permission: "myitems.command.attribute.buff"
+    Aliases:
+    - "Buff"
+    - "Buffs"
+  Attribute_Debuff:
+    Permission: "myitems.command.attribute.debuff"
+    Aliases:
+    - "Debuff"
+    - "Debuffs"
+  Attribute_NBT:
+    Permission: "myitems.command.attribute.nbt"
+    Aliases:
+    - "NBT"
+    - "NBTs"
+    - "Tags"
+    - "NBTTags"
+  Attribute_Power:
+    Permission: "myitems.command.attribute.power"
+    Aliases:
+    - "Power"
+    - "Powers"
+    - "Pow"
+  Attribute_Ability:
+    Permission: "myitems.command.attribute.ability"
+    Aliases:
+    - "Ability"
+  Attribute_Requirement:
+    Permission: "myitems.command.attribute.requirement"
+    Aliases:
+    - "Requirement"
+    - "Req"
+  Socket_Add:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Set"
+    - "Add"
+    - "Slot"
+  Socket_Add_Empty:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Empty"
+  Socket_Add_Locked:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Lock"
+    - "Locked"
+  Socket_Load:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Load"
+    - "Give"
+  Socket_Load_Gems:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Gem"
+    - "Gems"
+  Socket_Load_Rod:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Rod"
+  Socket_Drop:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Drop"
+  Socket_Drop_Rod:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Rod"
+  Socket_Drop_Gems:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "Gem"
+    - "Gems"
+  Socket_List:
+    Permission: "myitems.command.socket"
+    Aliases:
+    - "List"

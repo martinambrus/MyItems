@@ -1,0 +1,179 @@
+#-----=====[ Main Data ]=====-----#
+
+#Max_Grade: Max grade of an ability
+#Base_Duration_Effect: Base duration effect of ability
+#Scale_Duration_Effect: Additional duration per grade
+#Scale_Base_Bonus_Damage: Additional bonus damage per grade when ability is casted
+#Scale_Base_Percent_Damage: Additional percent damage per grade based on base damage when ability is casted
+#Scale_Cast_Bonus_Damage: Bonus damage of ability effect (Like epxlosion damage, spread damage)
+#Scale_Cast_Percent_Damage: Damage of ability effect based on base damage
+
+#-----=====[ Attributes ]=====-----#
+
+#Air_Shock: Push enemy and blow them away [Grade] [Base_Damage]
+#Bad_Luck: Add badluck effect to enemy [Grade] [Duration] [Base_Damage] [V1.9 or Above]
+#Blind: Add blindness effect to enemy [Grade] [Duration] [Base_Damage]
+#Flame: Causing burn on the enemy [Grade] [Duration]
+#Poison: Add poison effect to enemy [Grade] [Duration] [Base_Damage]
+#Wither: Add wither effect to enemy [Grade] [Duration] [Base_Damage]
+#Lightning: Struck enemy with lightning [Grade] [Base_Damage]
+#Cannibalism: Eats enemy flesh [Grade] [Base_Damage]
+#Vampirism: Drain enemy health [Grade] [Base_Damage]
+#Freeze: Causing enemy cannot move [Grade] [Duration] [Base_Damage]
+#Roots: Causing enemy pulled to earth [Grade] [Duration] [Base_Damage]
+#Curse: Causing enemy cannot healing [Grade] [Duration] [Base_Damage]
+#Slowness: Add slow effect to enemy [Grade] [Duration] [Base_Damage]
+#Fatigue: Add fatigue effect to enemy [Grade] [Duration] [Base_Damage]
+#Confuse: Add nausea effect to enemy [Grade] [Duration] [Base_Damage]
+#Weakness: Add weakness effect to enemy [Grade] [Duration] [Base_Damage]
+#Hungry: Add hunger effect to enemy [Grade] [Duration] [Base_Damage]
+#Levitation: Add levitation effect to enemy [Grade] [Duration] [Base_Damage] [V1.9 or Above]
+#Harm: Add harm effect to enemy [Grade] [Duration] [Base_Damage]
+#Flame_Wheel: Launch a flame wheel effect and burn the enemy [Grade] [Duration] [Base_Damage]
+#Dark_Flame: Burn enemy with black flame that cannot be extinguished naturally [Grade] [Duration] [Base_Damage] [Cast_Damage]
+#Dark_Impact: Causing enemy dizzy and make the enemy looks behind [Grade] [Base_Damage]
+#Venom_Spread: Causing enemy poisoned and spread the effect to nearby units [Grade] [Duration] [Base_Damage] [Cast_Damage]
+#Venom_Blast: Spread venom with explosion on the end [Grade] [Duration] [Base_Damage] [Cast_Damage]
+#Bubble_Deflector: Shoot a bubble spit to enemies on line [Grade] [Duration] [Base_Damage] [Cast_Damage]
+
+#-----=====[ Ability Configuration ]=====-----#
+
+Air_Shock:
+  Max_Grade: 10
+  Scale_Base_Additional_Damage: 0.5
+  Scale_Base_Percent_Damage: 5.0
+  
+Bad_Luck:
+  Max_Grade: 10
+  Base_Duration_Effect: 60
+  Scale_Duration_Effect: 30
+  
+Blind:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+  
+Bubble_Deflector:
+  Max_Grade: 10
+  Base_Duration_Effect: 20
+  Scale_Duration_Effect: 18
+  Scale_Base_Bonus_Damage: 1.0
+  Scale_Base_Percent_Damage: 3.5
+  Scale_Cast_Bonus_Damage: 0.5
+  Scale_Cast_Percent_Damage: 5.0
+
+Cannibalism:
+  Max_Grade: 10
+  
+Confuse:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+  
+Curse:
+  Max_Grade: 10
+  Base_Duration_Effect: 20
+  Scale_Duration_Effect: 10
+  Scale_Base_Bonus_Damage: 0.5
+  Scale_Base_Percent_Damage: 2.5
+  
+Dark_Flame:
+  Max_Grade: 10
+  Base_Duration_Effect: 50
+  Scale_Duration_Effect: 10
+  Scale_Cast_Percent_Damage: 5
+
+Dark_Impact:
+  Max_Grade: 10
+  Scale_Base_Bonus_Damage: 0.5
+  Scale_Base_Percent_Damage: 10
+
+Flame:
+  Max_Grade: 10
+  Base_Duration_Effect: 60
+  Scale_Duration_Effect: 24
+
+Flame_Wheel:
+  Max_Grade: 10
+  Base_Duration_Effect: 60
+  Scale_Duration_Effect: 15
+  Scale_Base_Bonus_Damage: 0.4
+  Scale_Base_Percent_Damage: 8
+
+Freeze:
+  Max_Grade: 10
+  Base_Duration_Effect: 30
+  Scale_Duration_Effect: 10
+  Scale_Base_Bonus_Damage: 0.2
+  Scale_Base_Percent_Damage: 4
+
+Harm:
+  Max_Grade: 10
+  Base_Duration_Effect: 10
+  Scale_Duration_Effect: 2
+
+Hungry:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+
+Levitation:
+  Max_Grade: 10
+  Base_Duration_Effect: 30
+  Scale_Duration_Effect: 12
+
+Lightning:
+  Max_Grade: 10
+  Scale_Base_Bonus_Damage: 2
+  Scale_Base_Percent_Damage: 15
+
+Poison:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+  
+Roots:
+  Max_Grade: 10
+  Base_Duration_Effect: 20
+  Scale_Duration_Effect: 10
+
+Slow:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+  
+Tired:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+  
+Vampirism:
+  Max_Grade: 10
+  
+Venom_Blast:
+  Max_Grade: 10
+  Base_Duration_Effect: 20
+  Scale_Duration_Effect: 5
+  Scale_Base_Bonus_Damage: 0
+  Scale_Base_Percent_Damage: 10
+  Scale_Cast_Bonus_Damage: 0.5
+  Scale_Cast_Percent_Damage: 10
+  
+Venom_Spread:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 10
+  Scale_Base_Bonus_Damage: 0
+  Scale_Base_Percent_Damage: 5
+  Scale_Cast_Bonus_Damage: 0
+  Scale_Cast_Percent_Damage: 5
+  
+Weak:
+  Max_Grade: 10
+  Base_Duration_Effect: 40
+  Scale_Duration_Effect: 20
+  
+Wither:
+  Max_Grade: 10
+  Base_Duration_Effect: 30
+  Scale_Duration_Effect: 15

@@ -1,0 +1,43 @@
+#-----=====[ Path ]=====-----#
+
+Path:
+  File_Config:
+  - "Configuration/config.yml"
+  File_Placeholder:
+  - "Configuration/placeholder.yml"
+  File_Ability_Weapon: 
+  - "Configuration/ability_weapon.yml"
+  File_Power_Command: 
+  - "Configuration/power_command.yml"
+  File_Power_Special: 
+  - "Configuration/power_special.yml"
+  File_Element: 
+  - "Configuration/element.yml"
+  File_Socket: 
+  - "Configuration/socket_gems.yml"
+  File_Item_Type: 
+  - "Configuration/Item_Type/default.yml"
+  File_Item_Tier: 
+  - "Configuration/Item_Tier/default.yml"
+  File_Item_Generator: 
+  - "Configuration/Item_Generator/default.yml"
+  File_Item_Set:
+  - "Configuration/Item_Set/default.yml"
+  File_Item: 
+  - "Database/item.yml"
+  File_Command:
+  - "Resources/command.yml"
+  File_Dependency:
+  - "Resources/dependency.yml"
+  File_Language:
+  - "Language/lang_en.yml"
+  Folder_Language:
+  - "Language"
+  Folder_Item_Type:
+  - "Configuration/Item_Type"
+  Folder_Item_Tier:
+  - "Configuration/Item_Tier"
+  Folder_Item_Generator:
+  - "Configuration/Item_Generator"
+  Folder_Item_Set:
+  - "Configuration/Item_Set"

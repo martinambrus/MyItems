@@ -1,0 +1,253 @@
+#Note: 
+#Please use [Space] instead of [Tab]
+#Forgot to add open and close string statement ["] causing not load properly!
+#If data value is invalid, the item will not be created!
+#1 Seconds = 20 Ticks
+
+#-----=====[ Main Data ]=====-----#
+
+#Keylore: Tên của ngọc
+#Display_Name: Tên hiển thị.
+#Material: Chất liệu làm ngọc. Vd: Emerald, Diamond
+#Data: Dữ liệu của Material. (Thường không có, chỉ 1 số Vd: Gỗ phân biệt bởi :1, :2, :3)
+#Shiny: Thêm hiệu ứng lấp lánh (Enchant)
+#Unbreakable: Chỉnh không bị phá vỡ cho Ngọc.
+#Flags: Chỉnh Flag cho ngọc.
+#Enchantment: Phù phép ngọc.
+#Lores: Lore của ngọc
+#Max_Grade: Cấp độ cao nhất của ngọc.
+#Type_Item: Loại vật phẩm được dùng ngọc
+#Base_Success_Rate: Tỉ lệ thành công cơ bản của ngọc.
+#Scale_Success_Rate: Tỉ lệ thành công (Tăng hoặc giảm theo cấp).
+#Effect: Hiệu ứng thêm khi trang bị ngọc.
+
+#-----=====[ Type Item ]=====-----#
+
+#Weapon: Tất cả các loại dùng làm vũ khí được
+#Armor: Tất cả các loại giáp
+#Universal: Tất cả vật phẩm
+
+#-----=====[ Bonus Effect ]=====-----#
+############# TIP: Theo cấp ở đây là theo cấp ngọc #########################
+#Bonus_Base_Additional_Damage: Sát thương thêm cơ bản.
+#Bonus_Scale_Additional_Damage: Sát thương thêm theo cấp.
+#Bonus_Base_Percent_Damage: Phần trăm sát thương cơ bản.
+#Bonus_Scale_Percent_Damage: Phần trăm sát thương theo cấp.
+#Bonus_Base_Penetration: Xuyên giáp thêm cơ bản.
+#Bonus_Scale_Penetration: Xuyên giáp thêm theo cấp.
+#Bonus_Base_PvP_Damage: Tỉ lệ phần trăm sát thương thêm khi đánh người.
+#Bonus_Scale_PvP_Damage: Tỉ lệ phần trăm sát thương thêm khi đánh người theo cấp.
+#Bonus_Base_PvE_Damage: Tỉ lệ phần trăm sát thương thêm khi đánh quái.
+#Bonus_Scale_PvE_Damage: Tỉ lệ phần trăm sát thương thêm khi đánh người theo cấp.
+#Bonus_Base_Additional_Defense: Giáp cơ bản.
+#Bonus_Scale_Additional_Defense: Giáp thêm theo cấp.
+#Bonus_Base_Percent_Defense: Tỉ lệ giáp cơ bản.
+#Bonus_Scale_Percent_Defense: Tỉ lệ giáp thêm theo cấp.
+#Bonus_Base_Max_Health: Máu thêm cơ bản khi mặc giáp.
+#Bonus_Scale_Max_Health: Máu thêm theo cấp khi mặc giáp.
+#Bonus_Base_PvP_Defense: Phần trăm giáp thêm khi đánh người.
+#Bonus_Scale_PvP_Defense: Phần trăm giáp thêm khi đánh người theo cấp.
+#Bonus_Base_PvE_Defense: Phần trăm giáp thêm khi đánh quái.
+#Bonus_Scale_PvE_Defense: Phần trăm giáp thêm khi đánh quái.
+#Bonus_Base_Critical_Chance: Thêm tỉ lệ bạo kích cơ bản.
+#Bonus_Scale_Critical_Chance: Thêm tỉ lệ bạo kích theo cấp.
+#Bonus_Base_Critical_Damage: Thêm bạo kích theo phần trăm.
+#Bonus_Scale_Critical_Damage: Thêm bạo kích theo cấp theo cấp.
+#Bonus_Base_Block_Amount: Thêm sát thương chặn được.
+#Bonus_Scale_Block_Amount: Sát thương chặn được theo cấp.
+#Bonus_Base_Block_Rate: Thêm tỉ lệ chặn đòn cơ bản.
+#Bonus_Scale_Block_Rate: Thêm tỉ lệ chặn đòn theo cấp.
+#Bonus_Base_Hit_Rate: Thêm tỉ lệ đánh trúng.
+#Bonus_Scale_Hit_Rate: Thêm tỉ lệ đánh trúng theo cấp.
+#Bonus_Base_Dodge_Rate: Thêm tỉ lệ né tránh.
+#Bonus_Scale_Dodge_Rate: Thêm tỉ lệ né tránh theo cấp.
+
+#-----=====[ Attributes Placeholder ]=====-----#
+
+#- {gems} = Têm của ngọc
+#- {grade} = Cấp độ ngọc
+#- {type_item} = Loại vật phẩm được cho phép sử dụng ngọc này
+#- {success_rate} = Tỉ lệ thành công của ngọc
+#- {failure_rate} = Tỉ lệ thất bạn của ngọc
+#- {additional_damage} = Tổng sát thương thêm ✓
+#- {percent_damage} = Tổng phần trăm sát thương thêm ✓
+#- {penetration} = Tổng xuyên giáp thêm ✓
+#- {pvp_damage} = Tổng sát thương người thêm
+#- {pve_damage} = Tổng sát thương quái thêm
+#- {additional_defense} = Tổng giáp thêm
+#- {percent_defense} = Tổng phần trăm giáp thêm ✓
+#- {max_health} = Tổng máu thêm 
+#- {pvp_defense} = Tổng giáp với người  thêm
+#- {pve_defense} = Tổng giáp với quái thêm
+#- {critical_chance} = Tổng %.Bạo kích thêm ✓
+#- {critical_damage} = Tổng Bạo kích thêm ✓
+#- {block_amount} = Tổng sát thương chặn đòn ✓
+#- {block_rate} = Tổng %.Chặn đòn thêm ✓
+#- {hit_rate} = Tổng %.Trúng thêm ✓
+#- {dodge_rate} = Tổng %.Né thêm ✓
+
+#-----=====[ Socket Gems Configuration ]=====-----#
+
+Ngọc_Chặn_Đòn_ST:
+  Keylore: "&8- &eChặn Sát Thương:&a +{block_amount}%"
+  Display_Name: "&6Chặn Sát Thương &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Armor"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Block_Amount: 2.5
+    Bonus_Scale_Block_Amount: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &eChặn Sát Thương"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{block_amount}%"
+
+Ngọc_Chặn_Đòn:
+  Keylore: "&8- &eTỉ Lệ Chặn Đòn:&a +{block_rate}%"
+  Display_Name: "&6Tỉ Lệ Chặn Đòn &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Armor"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Block_Rate: 2.5
+    Bonus_Scale_Block_Rate: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &eTỉ Lệ Chặn Đòn"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{block_rate}%"
+  
+Ngọc_Trúng_Thêm:
+  Keylore: "&8- &eTỉ Lệ Trúng Thêm:&a +{hit_rate}%"
+  Display_Name: "&6Tỉ Lệ Né Tránh &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Weapon"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Hit_Rate: 2.5
+    Bonus_Scale_Hit_Rate: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &eTỉ Lệ Trúng Thêm"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{hit_rate}%"
+  
+Ngọc_Né_Tránh:
+  Keylore: "&8- &eTỉ Lệ Né Tránh:&a +{dodge_rate}%"
+  Display_Name: "&6Tỉ Lệ Né Tránh &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Universal"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Dodge_Rate: 2.5
+    Bonus_Scale_Dodge_Rate: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &eTỉ Lệ Né Tránh"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{dodge_rate}%"
+  
+Ngọc_Xuyên_Giáp:
+  Keylore: "&8- &aXuyên Giáp: +{penetration}%"
+  Display_Name: "&aXuyên Giáp &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Weapon"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Penetration: 2.5
+    Bonus_Scale_Penetration: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &aXuyên Giáp"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{penetration}%"
+  
+Ngọc_Phòng_Thủ:
+  Keylore: "&8- &bPhòng Thủ:&a +{additional_defense}%"
+  Display_Name: "&bPhòng Thủ &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Universal"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Additional_Defense: 2.5
+    Bonus_Scale_Additional_Defense: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &bPhòng Thủ"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{additional_defense}%"
+  
+Ngọc_Tỉ_Lệ_Bạo_Kích:
+  Keylore: "&8- &cTỉ Lệ Chí Mạng:&a +{critical_chance}%"
+  Display_Name: "&cTỉ Lệ Chí Mạng &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Weapon"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Critical_Chance: 2.5
+    Bonus_Scale_Critical_Chance: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &cTỉ Lệ Chí Mạng"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{critical_chance}%"
+  
+Ngọc_Sát_Thương_Bạo_Kích:
+  Keylore: "&8- &4Sát Thương Chí Mạng:&a +{critical_damage}%"
+  Display_Name: "&4Sát Thương Chí Mạng &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Data: 1
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Weapon"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Critical_Damage: 2.5
+    Bonus_Scale_Critical_Damage: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &4Sát Thương Chí Mạng"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{critical_damage}%"
+  
+Ngọc_Sát_Thương:
+  Keylore: "&8- &6Sát Thương:&a +{additional_damage}%"
+  Display_Name: "&6Sát Thương &7[&c {grade}&7 ]"
+  Material: "Emerald"
+  Data: 1
+  Shiny: true
+  Max_Grade: 10
+  Type_Item: "Weapon"
+  Base_Success_Rate: 75
+  Scale_Success_Rate: -8
+  Effect:
+    Bonus_Base_Additional_Damage: 2.5
+    Bonus_Scale_Additional_Damage: 2.5
+  Lores:
+  - "&e▶ &7Ngọc: &6Sát Thương"
+  - "&e▶ &7Tỉ Lệ: &a{success_rate}&8 |&c {failure_rate}"
+  - "&e▶ &7Phân Loại: &b{type_item}"
+  - "&e▶ &7Khảm Ngọc: &a+{additional_damage}%"

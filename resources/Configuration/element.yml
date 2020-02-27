@@ -1,0 +1,108 @@
+#Note: 
+#Please use [Space] instead of [Tab]
+#Forgot to add open and close string statement ["] causing not load properly!
+#1 Seconds = 20 Ticks
+
+#-----=====[ Main Data ]=====-----#
+
+#Keylore: Identifier in lore item
+#Scale_Base_Additional_Damage: Bonus additional damage per point element.
+#Scale_Base_Percent_Damage: Bonus additional damage per element value based on base damage.
+#Resistance: Protection from the element.
+#Potion_To_Attacker: Potion effect that will be applied to the attacker.
+#Potion_To_Victims: Potion effect that will be applied to victims.
+
+#-----=====[ Attributes Potion ]=====-----#
+
+#Scale_Chance: Chance will be added per point element. (In Percent)
+#Scale_Duration: Duration will be added per point element. (In Ticks)
+#Grade: Grade of the potion.
+
+#-----=====[ Vanilla Potion ]=====-----#
+
+#SPEED    #FAST_DIGGING    #INCREASE_DAMAGE
+#SLOW     #SLOW_DIGGING    #WATER_BREATHING   
+#HEAL     #REGENERATION    #FIRE_RESISTANCE
+#HARM     #INVISIBILITY    #DAMAGE_RESISTANCE
+#JUMP     #CONFUSION       #BLINDNESS
+#HUNGER   #GLOWING         #LEVITATION
+#POISON   #SATURATION      #WEAKNESS
+#WITHER   #ABSORPTION      #HEALTH_BOOST
+#LUCK     #NIGHT_VISION    #UNLUCK
+
+#-----=====[ Element Configuration ]=====-----#
+
+Fire:
+  Keylore: "&cFire Element"
+  Scale_Base_Additional_Damage: 0.1
+  Scale_Base_Percent_Damage: 2
+  Potion_To_Attacker:
+    INCREASE_DAMAGE:
+      Scale_Chance: 0.5
+      Scale_Duration: 1
+      Grade: 1
+  Resistance:
+    Fire: 1
+    Water: -1.5
+    Nature: 2
+    Wind: -1
+ 
+Water:
+  Keylore: "&cWater Element"
+  Scale_Base_Additional_Damage: 0.05
+  Scale_Base_Percent_Damage: 1.2
+  Potion_To_Attacker:
+    REGENERATION:
+      Scale_Chance: 0.2
+      Scale_Duration: 1
+      Grade: 2
+  Potion_To_Victims:
+    SLOW_DIGGING:
+      Scale_Chance: 0.05
+      Scale_Duration: 1
+      Grade: 1
+  Resistance:
+    Fire: 2.5
+    Water: -1
+    Nature: 0.5
+    Wind: -2
+   
+Nature:
+  Keylore: "&cNature Element"
+  Scale_Base_Additional_Damage: 0.04
+  Scale_Base_Percent_Damage: 1
+  Potion_To_Attacker:
+    ABSORPTION:
+      Scale_Chance: 0.2
+      Scale_Duration: 1
+      Grade: 1
+  Potion_To_Victims:
+    WEAKNESS:
+      Scale_Chance: 0.3
+      Scale_Duration: 2
+      Grade: 1
+  Resistance:
+    Fire: -2
+    Water: 2
+    Nature: 1    
+    Wind: 0.2
+   
+Wind:
+  Keylore: "&cWind Element"
+  Scale_Base_Additional_Damage: 0.03
+  Scale_Base_Percent_Damage: 0.5
+  Potion_To_Attacker:
+    SPEED:
+      Scale_Chance: 0.2
+      Scale_Duration: 2
+      Grade: 1
+  Potion_To_Victims:
+    LEVITATION:
+      Scale_Chance: 0.1
+      Scale_Duration: 1
+      Grade: 1
+  Resistance:
+    Fire: -1.5
+    Water: 2.5
+    Nature: 0
+    Wind: 1

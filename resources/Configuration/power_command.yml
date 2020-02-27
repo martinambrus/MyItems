@@ -1,0 +1,47 @@
+#-----=====[ Format Power Command ]=====-----#
+
+#<powercommand_id>:
+#  Consume: <consume>
+#  KeyLore: <keylore>
+#  Command:
+#    OP:
+#    - "<command_op_1>"
+#    - "<command_op_2>"
+#    Console:
+#    - "<command_console_1>"
+#    - "<command_console_2>"
+
+#Consume: Consume item after used
+#KeyLore: Identifier in lore item
+#Command: Command that will be executed
+
+#-----=====[ PlaceHolder ]=====-----#
+
+# {player}: Player that hold the item
+
+#-----=====[ Power Command Configuration ]=====-----#
+
+Suicide:
+  Consume: true
+  KeyLore: "Suicide"
+  Command:
+    OP:
+    - "suicide"
+  
+Heal:
+  Consume: true
+  KeyLore: "Heal"
+  Command:
+    OP:
+    - "heal"
+  
+Buff:
+  Consume: true
+  KeyLore: "Give all buff for 1 minutes"
+  Command:
+    Console:
+    - "effect {player} 1 60 2"
+    - "effect {player} 3 60 1"
+    - "effect {player} 5 60 1"
+    - "effect {player} 8 60 2"
+    - "effect {player} 10 60 2"

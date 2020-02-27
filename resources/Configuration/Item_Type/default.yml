@@ -1,0 +1,265 @@
+#-----=====[ Format Item Type ]=====-----#
+
+#<itemtype_id>:
+#  Material: <material>
+#  Data: <data>
+#  Shiny: <shiny>
+#  NBT:
+#    <slot_1>:
+#      <attribute_1>: <value>
+#      <attribute_2>: <value>
+#    <slot_2>:
+#      <attribute_1>: <value>
+#      <attribute_2>: <value>
+#  Enchantment:
+#    <enchantment_1>: <value>
+#    <enchantment_2>: <value>
+#  Modifier:
+#    <modifier_1>: <value>
+#    <modifier_2>: <value>
+
+#-----=====[ Stats Modifier ]=====-----#
+
+#Damage
+#Penetration
+#PvP_Damage
+#PvE_Damage
+#Critical_Chance
+#Critical_Damage
+#Hit_Rate
+#Defense
+#PvP_Defense
+#PvE_Defense
+#Health
+#Block_Amount
+#Block_Rate
+#Dodge_Rate
+
+#-----=====[ Item Type Configuration ]=====-----#
+
+Normal_Wooden_Sword:
+  Material: "Wood_Sword"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Damage: 1.25
+    Penetration: 0.8
+    Hit_Rate: 0.7
+    
+Normal_Bow:
+  Material: "Bow"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Damage: 0.9
+    Penetration: 1.1
+    Hit_Rate: 1.3
+    
+Advanced_Wooden_Sword:
+  Material: "Wood_Sword"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Damage: 1.4
+    Penetration: 0.9
+    Hit_Rate: 0.8
+  Enchantment:
+    Sweeping_Edge: 3
+    Knockback: 3
+    
+Advanced_Bow:
+  Material: "Bow"
+  Data: 0
+  Shiny: false
+  NBT:
+    MainHand:
+      Shield: 5
+    OffHand:
+      Shield: 10
+  Enchantment:
+    Arrow_Knockback: 3
+    Arrow_Infinite: 1
+  Modifier:
+    Damage: 1.0
+    Penetration: 1.25
+    Hit_Rate: 1.5
+    
+Normal_Shield:
+  Material: "Shield"
+  Data: 0
+  Shiny: false
+  NBT:
+    OffHand:
+      Armor: 4
+      Shield: 5
+  Modifier:
+    Defense: 0.8
+    Health: 0.7
+    Block_Rate: 1.25
+    
+Advanced_Shield:
+  Material: "Shield"
+  Data: 0
+  Shiny: false
+  NBT:
+    OffHand:
+      Armor: 8
+      Shield: 10
+  Modifier:
+    Defense: 1.0
+    Health: 0.9
+    Block_Rate: 1.5
+    
+Normal_Leather_Helmet:
+  Material: "Leather_Helmet"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 0.6
+    Health: 1.3
+    Block_Rate: 0.8
+    
+Normal_Leather_Chestplate:
+  Material: "Leather_Chestplate"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 1.2
+    Health: 0.7
+    Block_Rate: 1.2    
+    
+Normal_Leather_Leggings:
+  Material: "Leather_Leggings"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 0.8
+    Health: 0.8
+    PvP_Defense: 1.2
+    PvE_Defense: 1.2
+    
+Normal_Leather_Boots:
+  Material: "Leather_Boots"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 0.5
+    Health: 0.75
+    Dodge_Rate: 1.4
+    
+Advanced_Leather_Helmet:
+  Material: "Leather_Helmet"
+  Data: 0
+  Modifier:
+    Defense: 0.8
+    Health: 1.5
+    Block_Rate: 1.0
+  Enchantment:
+    Protection_Projectile: 3
+    Oxygen: 3
+    
+Advanced_Leather_Chestplate:
+  Material: "Leather_Chestplate"
+  Data: 0
+  Modifier:
+    Defense: 1.5
+    Health: 0.9
+    Block_Rate: 1.5
+  Enchantment:
+    Protection_Environtmental: 3
+    
+Advanced_Leather_Leggings:
+  Material: "Leather_Leggings"
+  Data: 0
+  Modifier:
+    Defense: 1.0
+    Health: 1.0
+    PvP_Defense: 1.4
+    PvE_Defense: 1.4
+  Enchantment:
+    Protection_Explosions: 3
+    
+Advanced_Leather_Boots:
+  Material: "Leather_Boots"
+  Data: 0
+  Modifier:
+    Defense: 0.6
+    Health: 0.9
+    Dodge_Rate: 1.5
+  Enchantment:
+    Protection_Projectile: 3
+    Depth_Strider: 3
+    
+Normal_Chain_Helmet:
+  Material: "Chainmail_Helmet"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 0.6
+    Health: 1.3
+    Block_Rate: 0.8
+    
+Normal_Chain_Chestplate:
+  Material: "Chainmail_Chestplate"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 1.2
+    Health: 0.7
+    Block_Rate: 1.2    
+    
+Normal_Chain_Leggings:
+  Material: "Chainmail_Leggings"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 0.8
+    Health: 0.8
+    PvP_Defense: 1.2
+    PvE_Defense: 1.2
+    
+Normal_Chain_Boots:
+  Material: "Chainmail_Boots"
+  Data: 0
+  Shiny: false
+  Modifier:
+    Defense: 0.5
+    Health: 0.75
+    Dodge_Rate: 1.4
+    
+Shiny_Chain_Helmet:
+  Material: "Chainmail_Helmet"
+  Data: 0
+  Shiny: true
+  Modifier:
+    Defense: 0.72
+    Health: 1.56
+    Block_Rate: 0.96
+    
+Shiny_Chain_Chestplate:
+  Material: "Chainmail_Chestplate"
+  Data: 0
+  Shiny: true
+  Modifier:
+    Defense: 1.48
+    Health: 0.84
+    Block_Rate: 1.44    
+    
+Shiny_Chain_Leggings:
+  Material: "Chainmail_Leggings"
+  Data: 0
+  Shiny: true
+  Modifier:
+    Defense: 0.96
+    Health: 0.96
+    PvP_Defense: 1.44
+    PvE_Defense: 1.44
+    
+Shiny_Chain_Boots:
+  Material: "Chainmail_Boots"
+  Data: 0
+  Shiny: true
+  Modifier:
+    Defense: 0.6
+    Health: 0.9
+    Dodge_Rate: 1.68

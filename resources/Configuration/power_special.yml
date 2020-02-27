@@ -1,0 +1,44 @@
+#Note: 
+#Please use [Space] instead of [Tab]
+#Forgot to add open and close string statement ["] causing not load properly!
+#1 Seconds = 20 Ticks
+
+#-----=====[ Main Data ]=====-----#
+
+#Duration_Effect: Duration of effect from Special Power
+#Base_Additional_Damage: Bonus damage when power is cast
+#Base_Percent_Damage: Damage of power based on base damage
+
+#-----=====[ Attributes ]=====-----#
+
+#Blink: Teleport to short location in front of caster
+#Fissure: Crack earth in front of line with bursting fire [Duration] [Damage]
+#Ice_Spikes: Summon spikes of ice that causing slowness to enemies [Duration] [Damage]
+#Amaterasu: Summon a black flame that causing nearby units burned [Duration] [Damage]
+#Nero_Beam: Shoot a beam that causing slowness [Duration] [Damage]
+
+#-----=====[ Ability Configuration ]=====-----#
+
+Blink:
+  Base_Additional_Damage: 0
+  Base_Percent_Damage: 100
+
+Fissure:
+  Duration_Effect: 60
+  Base_Additional_Damage: 3
+  Base_Percent_Damage: 200
+ 
+Ice_Spikes:
+  Duration_Effect: 80
+  Base_Additional_Damage: 2
+  Base_Percent_Damage: 130
+ 
+Amaterasu:
+  Duration_Effect: 100
+  Base_Additional_Damage: 1
+  Base_Percent_Damage: 50
+ 
+Nero_Beam:
+  Duration_Effect: 50
+  Base_Additional_Damage: 2.5
+  Base_Percent_Damage: 150

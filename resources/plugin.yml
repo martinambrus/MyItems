@@ -1,0 +1,135 @@
+main: com.praya.myitems.MyItems
+name: MyItems
+version: 6.4.6
+api-version: 1.13
+website: https://www.spigotmc.org/resources/authors/70791/
+author: Praya Amadiga Pitasa
+depend: 
+- AgarthaLib
+softdepend:
+- PlaceholderAPI
+- MVdWPlaceholderAPI
+- MythicMobs
+
+commands:
+  myitems:
+    description: Plugin base command
+    aliases: 
+    - myitem
+    - itemeditor
+    - items
+    - item
+    - mi
+  itematt:
+    description: Show/Set all attributes of your items
+    aliases: 
+    - att
+    - attr
+    - attributes
+    - attribute
+  enchant:
+    description: All command of enchantment
+    aliases: 
+    - enchantment
+  enchantadd:
+    description: Add enchantment to your item
+    aliases: 
+    - addenchant
+  enchantremove:
+    description: Remove an enchantment
+    aliases: 
+    - removeenchant
+    - remenchant
+  enchantclear:
+    description: Remove all enchantment from your item
+    aliases: 
+    - clearenchant
+  itemname:
+    description: Set name of your item
+    aliases: 
+    - setdisplayname
+    - setname
+  lore:
+    description: All command of lores edit.
+    aliases: 
+    - lores
+  loreadd:
+    description: Add new lore to your item.
+    aliases: 
+    - addlore
+  loreset:
+    description: Set lore at certain line.
+    aliases: 
+    - setlore
+  loreinsert:
+    description: Insert lore at certain line.
+    aliases: 
+    - insertlore
+  loreremove:
+    description: Remove lore at certain line.
+    aliases: 
+    - removelore 
+    - remlore
+  loreclear:
+    description: Clear all lore from your item.
+    aliases: 
+    - clearlore
+  flag:
+    description: All command of flag edit.
+    aliases: 
+    - flags
+  flagadd:
+    description: Add new flag to your item.
+    aliases: 
+    - addflag
+  flagremove:
+    description: Remove flag from your item.
+    aliases: 
+    - removeflag
+    - remflag
+  flagclear:
+    description: Remove all flag from your item.
+    aliases: 
+    - clearflag
+  nbtclear:
+    description: Clear all nbt from your item.
+    aliases: 
+    - clearnbt
+  socket:
+    description: Add bonus stats to equipment by applying gems.
+    aliases: 
+    - sockets
+  unbreakable:
+    description: Turn on/off unbreakable state of held item.
+    aliases: 
+    - unbreak
+    - unbreaking
+    
+permissions:
+  myitems.admin:
+    description: Gives access to everything!
+    children:
+      myitems.command.reload: true
+      myitems.command.save: true
+      myitems.command.remove: true
+      myitems.command.list: true
+      myitems.command.load: true
+      myitems.command.drop: true
+      myitems.command.amount: true
+      myitems.command.data: true
+      myitems.command.material: true
+      myitems.command.repair: true
+      myitems.command.name: true
+      myitems.command.lore: true
+      myitems.command.flag: true
+      myitems.command.enchant: true
+      myitems.command.unbreakable: true
+      myitems.command.attribute.stats: true
+      myitems.command.attribute.element: true
+      myitems.command.attribute.buff: true
+      myitems.command.attribute.debuff: true
+      myitems.command.attribute.nbt: true
+      myitems.command.attribute.power: true
+      myitems.command.attribute.ability: true
+      myitems.command.attribute.requirement: true
+      myitems.command.socket: true

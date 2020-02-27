@@ -1,0 +1,429 @@
+Configuration:
+  General:
+    Version: 2.0
+    #Version of the config.
+    
+    Locale: "vi"
+    #Locale language
+  
+  Metrics:
+    Message: true
+    #Send a message to the console when connecting metrics.
+  
+  Hook:
+    Message: false
+    #Send a message to console about dependencies information.
+    
+  Utility:    
+    Tooltip: "&8&l[&4&l?&8&l]"
+    #Character for text tooltip.
+    
+    Currency: "$"
+    #Symbol currency.
+      
+  Effect:
+    Range: 50
+    #Max distance for send packet particle and sound.
+    
+  List:
+    Content: 5
+    #Max of list content what will be displayed
+    
+  Modifier:
+    Enable_Vanilla_Damage: true
+    #If false, vanilla damage will not working
+    
+    Enable_Vanilla_Formula_Armor: false 
+    #If false, vanilla protection will not working
+    
+    Enable_Custom_Modifier: true    
+    #Enable feature attribute from this plugin
+    
+    Enable_Flat_Damage: false
+    #If true, the damage receives is equal to its value
+    
+    Enable_Balancing_System: true      
+    #Damage will set to balance
+    
+    Enable_Balancing_Mob: true
+    #Mob receive damage will set to balance based on vanilla damage
+    
+    Enable_Custom_Critical: true              
+    #Custom critical effect
+    
+    Enable_Custom_Mob_Damage: true
+    #If you're server using plugin that modify damage mob (Great Damage), enables this.
+    #Enable this state to allow mob using custom items.
+    #Note: If Mob Modifier is false, Custom Lore Stats defense from victims will not be affected, but buffs & ability still work,
+    #~~~~~ this is to avoid overpowered armor for pure vanilla mob!.
+    
+    Defense_Affect_Entity_Explosion: true
+    #If true, the custom defense will affect entity explosion damage
+    
+    Defense_Affect_Block_Explosion: true
+    #If true, the custom defense will affect to block explosion damage
+    
+    Defense_Affect_Custom: true
+    #If true, the custom defense will affect custom damage by another plugin
+    
+    Defense_Affect_Contact: true
+    #If true, the custom defense will affect to contact damage
+    
+    Defense_Affect_Fall: true
+    #If true, the custom defense will affect fall damage
+    
+    Defense_Affect_Falling_Block: true
+    #If true, the custom defense will affect falling block damage
+    
+    Defense_Affect_Thorn: true
+    #If true, the custom defense will affect thorn damage
+    
+    Critical_Attack_Type: "Effect"
+    #Available: Effect, Messages.
+    #- Effect
+    #- Messages
+    #- None
+    
+    Modus_Value: 10.0
+    #Normal damage value in your server
+
+    #Ex. You want to create a server with most of your weapon damage value range around 50,
+    #so put the value in modus_Value to 50.  
+
+    #This is very important because this value will towards a balanced server.
+    #If you change too small or too high depends on your server, your server will be unbalanced
+    #because of this value used as formula damage for vanilla & custom modifier!
+
+    #Formula: "Damage / (1+Math.log10(1+(10*defense/modus_Value))"
+    #Balancing: "Damage * 10 / modus_Value"
+    
+    Scale_Damage_Vanilla: 1.0  
+    #Scale Damage from vanilla that will affect  
+    
+    Scale_Damage_Custom: 1.0  
+    #Scale Damage from custom stats
+    
+    Scale_Damage_Overall: 1.0  
+    #Scale Final damage
+    
+    Scale_Defense_Overall: 0.5 
+    #Scale Damage reduction based on defense
+    
+    Scale_Defense_Physic: 0.25
+    #Scale defense being hit damage by non-entity
+    
+    Scale_Absorb_Effect: 0.5  
+    #Scale damage will transfer to absorb point. ex: 0.8 mean 20% damage to health and 80% to absorb point
+    
+    Scale_Mob_Damage_Receive: 1.0
+    #Mobs damage receive
+    
+    Scale_Exp_OffHand: 0.5    
+    #Exp will gain for OffHand scaled on base exp
+    
+    Scale_Exp_Armor: 0.2      
+    #Exp will gain for Armor scaled on base exp
+    
+  Drop:
+    Exp_Player: 3.0
+    #Exp drop when killing player
+    
+    Exp_Mobs: 1.0
+    #Exp drop when killing a mob
+    
+  Support:
+    Type_Level: "Auto"
+    #Available Level Type:
+    #- Auto (Search for possible support)
+    #- Vanilla
+    #- BattleLevels
+    #- SkillAPI
+    #- SkillsPro
+    #- Heroes
+    
+    Type_Class: "Auto"
+    #Available Class Type:
+    #- Auto (Search for possible support)
+    #- SkillAPI
+    #- SkillsPro
+    #- Heroes
+    
+  Stats:
+    Enable_Item_Universal: false
+    #If true, stats are not separated among weapon and armor
+    
+    Enable_Item_Broken: false
+    #If true, the item will break when lore durability reaches zero
+    
+    Enable_Item_Broken_Message: true
+    #If true, will send a notification message when the item is broken
+    
+    Enable_Max_Health: true
+    #Enable max health effect from item attributes
+    
+    Format_Value: "&7<stats>&f&l: <value>"
+    # PlaceHolder Stats_Format:
+    # <stats> = Key Stats
+    # <value> = Value Stats
+    
+    Format_Exp: "&7[&d<exp>&7/&d<up>&7]"
+    # PlaceHolder Format Exp:
+    # <exp> = Current Exp
+    # <up> = Exp to level up
+    
+    Lore_Positive_Value: "&a"
+    Lore_Negative_Value: "&c"
+    Lore_Range_Symbol: " &7➨ "
+    Lore_Divider_Symbol: "&7/"
+    Lore_Multiplier_Symbol: "&7x"
+    
+    Scale_OffHand_Value: 0.5  
+    #Scale stats from offhand item
+    
+    Scale_Up_Value: 0.05      
+    #Stats will increase every item is level up
+    
+    Scale_Armor_Shield: 1.0
+    #Scale stats armor for item shield 
+    #This option only active when item universal is disabled
+    
+    Max_Level_Value: 20        
+    #Max level for item
+    
+    Identifier_Damage: "Damage"
+    Identifier_Penetration: "Penetration"
+    Identifier_PvP_Damage: "PvP Damage"
+    Identifier_PvE_Damage: "PvE Damage"
+    Identifier_Defense: "Defense"
+    Identifier_PvP_Defense: "PvP Defense"
+    Identifier_PvE_Defense: "PvE Defense"
+    Identifier_Health: "Health"
+    Identifier_Health_Regen: "Health Regen"
+    Identifier_Stamina_Max:  "Max Stamina"
+    Identifier_Stamina_Regen: "Stamina Regen"
+    Identifier_Attack_AoE_Radius: "AoE Radius"
+    Identifier_Attack_AoE_Damage: "AoE Damage"
+    Identifier_Critical_Chance: "Crit.Chance"
+    Identifier_Critical_Damage: "Crit.Damage"
+    Identifier_Block_Amount: "Block Amount"
+    Identifier_Block_Rate: "Block Rate"
+    Identifier_Hit_Rate: "Hit Rate"
+    Identifier_Dodge_Rate: "Dodge Rate"
+    Identifier_Fishing_Chance: "Fishing Chance"
+    Identifier_Fishing_Power: "Fishing Power"
+    Identifier_Fishing_Speed: "Fishing Speed"
+    Identifier_Lures_Max_Tension: "Lures Max Tension"
+    Identifier_Lures_Endurance: "Lures Endurance"
+    Identifier_Durability: "Durability"
+    Identifier_Level: "Level"
+    
+  Ability:
+    Format: "&aChance of <chance> to apply <ability>"
+    # PlaceHolder Ability:
+    # <chance> = Chance to activate ability
+    # <ability> = Key ability
+    
+    Weapon:
+      Enable_OffHand: true
+      #if false, ability from offhand will not work
+      
+      Identifier_Air_Shock: "Air Shock"
+      Identifier_Bad_Luck: "Bad Luck"
+      Identifier_Blind: "Blindness"
+      Identifier_Bubble_Deflector: "Bubble Deflector"
+      Identifier_Cannibalism: "Cannibalism"
+      Identifier_Confuse: "Confuse"
+      Identifier_Curse: "Curse"
+      Identifier_Dark_Flame: "Dark Flame"
+      Identifier_Dark_Impact: "Dark Impact"
+      Identifier_Flame: "Flame"
+      Identifier_Flame_Wheel: "Flame Wheel"
+      Identifier_Freeze: "Freeze"
+      Identifier_Harm: "Harm"
+      Identifier_Hungry: "Hunger"
+      Identifier_Levitation: "Levitation"
+      Identifier_Lightning: "Lightning"
+      Identifier_Poison: "Poison"
+      Identifier_Roots: "Roots"
+      Identifier_Slowness: "Slowness"
+      Identifier_Tired: "Tired"
+      Identifier_Vampirism: "Vampirism"
+      Identifier_Venom_Blast: "Venom Blast"
+      Identifier_Venom_Spread: "Venom Spread"
+      Identifier_Weakness: "Weakness"
+      Identifier_Wither: "Wither"
+      
+  Passive:
+    Enable_Grade_Calculation: true
+    #If true, passive grade will be calculated by the same type of all equipment slot
+    
+    Enable_Hand: true
+    #If true, passive on item hand will works
+    
+    Period_Effect: 100
+    #Passive effect interval in ticks, the higher value will reduce lag but less accurate
+    
+    Buff:
+      Format: "&dApply buff <buff>"
+      # PlaceHolder Buffs_Format:
+      # <buff> = Key Buff
+      
+      Identifier_Strength: "Strength"
+      Identifier_Protection: "Protection"
+      Identifier_Vision: "Vision"
+      Identifier_Jump: "Jump"
+      Identifier_Absorb: "Absorb"
+      Identifier_Fire_Resistance: "Fire Resistance"
+      Identifier_Invisibility: "Invisibility"
+      Identifier_Luck: "Luck"
+      Identifier_Health_Boost: "Health"
+      Identifier_Regeneration: "Regeneration"
+      Identifier_Saturation: "Saturation"
+      Identifier_Speed: "Movement"
+      Identifier_Water_Breathing: "Water Breathing"
+      Identifier_Haste: "Haste"
+      
+    Debuff:
+      Format: "&cApply debuff <debuff>"
+      # PlaceHolder Debuffs_Format:
+      # <debuff> = Key Debuff
+      
+      Identifier_Weak: "Weak"
+      Identifier_Slow: "Slow"
+      Identifier_Blind: "Blind"
+      Identifier_Confuse: "Confuse"
+      Identifier_Starve: "Starve"
+      Identifier_Toxic: "Toxic"
+      Identifier_Glow: "Glow"
+      Identifier_Fatigue: "Fatigue"
+      Identifier_Wither: "Wither"
+      Identifier_Unluck: "Unluck"
+    
+  Power:
+    Enable_Message_Cooldown: true
+    #If true, will send message power cooldown to the player
+     
+    Format: "&6<click>&f&l: &7<type> &8&l[&c<cooldown> Seconds&8&l]"
+    # PlaceHolder Power:
+    # <click> : Type of interact click
+    # <type> : Type key of power
+    # <cooldown> : Cooldown of power
+    
+    Click_Left: "Left Click"
+    Click_Right: "Right Click"
+    Click_Shift_Left: "S-Left Click"
+    Click_Shift_Right: "S-Right Click"
+    
+    Projectile:
+      Identifier_Arrow: "Arrow"
+      Identifier_Snow_Ball: "SnowBall"
+      Identifier_Egg: "Egg"
+      Identifier_Flame_Arrow: "FlameArrow"
+      Identifier_Flame_Ball: "FlameBall"
+      Identifier_Flame_Egg: "FlameEgg"
+      Identifier_Small_Fireball: "Small Fireball"
+      Identifier_Large_Fireball: "Large Fireball"
+      Identifier_Wither_Skull: "Wither Skull"
+      
+    Special:
+      Identifier_Blink: "Blink"
+      Identifier_Fissure: "Fissure"
+      Identifier_Ice_Spikes: "Ice Spikes"
+      Identifier_Amaterasu: "Amaterasu"
+      Identifier_Nero_Beam: "Nero Beam"
+    
+  Element:
+    Format: "&7&l[&4&l!&7&l] &r<element>&f&l: <value>"
+    # PlaceHolder Element_Format:
+    # <element> = Key Element
+    # <value> = Value Element
+    
+  Socket:
+    Format_Slot: "&8&l- &7< <slot> >"
+    # PlaceHolder Socket_Format:
+    # <slot> = Socket Slot
+    
+    Format_Slot_Empty: "Empty"
+    #Format slot empty
+    
+    Format_Slot_Locked: "Locked"
+    #Format slot locked
+    
+    Type_Item_Weapon: "Weapon"
+    Type_Item_Armor: "Armor"
+    Type_Item_Universal: "Universal"
+    
+    Cost_Socket: 0
+    #Default cost when put gems on equipment
+    
+    Cost_Unlock: 1000
+    #Cost when unlock slot socket
+    
+    Cost_Desocket: 250
+    #Cost when removing gems from the equipment
+    
+    Item:
+      Rod_Unlock:
+        Display_Name: "&8[&aSocket Rod&8]"
+        Material: "STICK"
+        Lores:
+        - "&7Use this rod to unlock slot socket"
+      
+      Rod_Remove:
+        Display_Name: "&8[&cDesocket Rod&8]"
+        Material: "STICK"
+        Lores:
+        - "&7Use this rod to remove socket"
+    
+  Requirement:
+    Format_Level: "&cRequire <level> level to use."
+    # Placeholder:
+    # <level> = Player level
+    
+    Format_Permission: "&cRequire permission <permission> to use."
+    # Placeholder:
+    # <permission> = Permission needed
+    
+    Format_Class: "&cRequire class <class> to use."
+    # Placeholder:
+    # <class> = Player class
+    
+    Format_Soul_Unbound: "&c&lUnbound"
+    # This is format when item still not yet bound to any player
+    
+    Format_Soul_Bound: "&cSouldbound to <player>"
+    # Placeholder:
+    # <player> = Owner of the item
+    
+  Set:
+    Format:
+    - ""
+    - "&6<item_set_name> Set &7(<item_set_total>/<item_set_max>)"
+    - "<list_item_set_component>"
+    - ""
+    - "&6Set Bonus:"
+    - "<list_item_set_bonus>"
+    # Placeholder:
+    # <item_set_name> = Name of item set
+    # <item_set_total> = Total set that used by player
+    # <item_set_max> = Total item that available
+    # <list_item_set_component> = List of item set component
+    # <list_item_set_bonus> = List of item set bonus
+    
+    Format_Component: "► <item_set_component_keylore>"
+    # Placeholder:
+    # <item_set_component_keylore> = KeyLore of item component
+    
+    Format_Bonus: "[<item_set_bonus_amount>] <item_set_bonus_description>"
+    # Placeholder:
+    # <item_set_bonus_amount> = Amount ID of item bonus
+    # <item_set_bonus_description> = Description of item bonus
+    
+    Lore_Component_Active: "&f"
+    Lore_Component_Inactive: "&8"
+    Lore_Bonus_Active: "&f"
+    Lore_Bonus_Inactive: "&8"
+    
+  Misc:
+    Enable_Particle_Potion: false
+    #Show default particle when applying the potion to the player

@@ -1,0 +1,464 @@
+#-----=====[ Format Item Generator ]=====-----#
+
+#<itemgenerator_id>:
+#  Display_Name: <display_name>
+#  Unbreakable: <unbreakable>
+#  Flags:
+#  - "<flag_1>"
+#  - "<flag_2>"
+#  Type:
+#    <itemtype_1>:
+#      Possibility: <value>
+#      Description:
+#      - "<desc_1>"
+#      - "<desc_2>"
+#      Name:
+#      - "<name_1>"
+#      - "<name_2>"
+#  Tier:
+#    <itemtype_1>:
+#      Possibility: <value>
+#      Additional_Lores:
+#      - "<additional_lore_1>"
+#      - "<additional_lore_2>"
+#  Lores:
+#  - "<lore_1>"
+#  - "<lore_2>"
+  
+#-----=====[ Item Flags ]=====-----#
+
+#HIDE_ENCHANTS
+#HIDE_ATTRIBUTES
+#HIDE_UNBREAKABLE
+#HIDE_DESTROYS
+#HIDE_PLACED_ON
+#HIDE_POTION_EFFECTS
+  
+#-----=====[ Local Placeholder ]=====-----#
+
+#Name: Random name from item type.
+#Type_ID: Key id of item type.
+#Tier_ID: Key id of item tier.
+#Tier_Name: Name of item tier.
+#Tier_Prefix: Prefix of item tier.
+
+#-----=====[ Global Placeholder ]=====-----#
+
+#{myitems_text_lorestats:<lorestats>:<min value>:[<max value>]}
+#{myitems_text_ability:<ability>:<grade>:<chance>}
+#{myitems_text_buff:<buff>:<grade>}
+#{myitems_text_power:<power>:<click>:<type>:[<cooldown>]}
+#{myitems_text_socket_empty}
+#{myitems_text_socket_fill:<gems>}
+#{myitems_text_element:<element>:<value>}
+#{myitems_text_requirement_Unbound}
+#{myitems_text_requirement_Bound:<player>}
+#{myitems_text_requirement_Level:<level>}
+#{myitems_text_requirement_Permission:<permission>}
+#{myitems_text_requirement_Class:<class>}
+
+#note: use "~" for range value
+
+#-----=====[ Item Generator ]=====-----#
+
+Beginner_Weapon:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Normal_Wooden_Sword:
+      Possibility: 1
+      Description:
+      - "&2A dull sword that used by begginers"
+      Name:
+      - "Beginner Sword"
+    Normal_Bow:
+      Possibility: 1
+      Description:
+      - "&2A long bow that used by begginers"
+      Name:
+      - "Beginner Bow"
+  Tier:
+    Common:
+      Possibility: 80
+    Uncommon:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:damage:5~7:8~10}"
+  - "{myitems_text_lorestats:critical_chance:5~8}"
+  - "{myitems_text_lorestats:critical_damage:1.2~1.35}"
+  - "{myitems_text_lorestats:durability:1~256:256}"  
+  
+Advanced_Weapon:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Advanced_Wooden_Sword:
+      Possibility: 1
+      Description:
+      - "&2A sword that used by hunter"
+      Name:
+      - "Advanced Sword"
+    Advanced_Bow:
+      Possibility: 1
+      Description:
+      - "&2A long bow that used by hunter"
+      Name:
+      - "Advanced Bow"
+  Tier:
+    Common:
+      Possibility: 80
+    Uncommon:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:damage:10~15:18~24}"
+  - "{myitems_text_lorestats:critical_chance:8~15}"
+  - "{myitems_text_lorestats:critical_damage:1.3~1.5}"
+  - "{myitems_text_lorestats:durability:1~1024:1024}"  
+  
+Flame_Weapon:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Normal_Wooden_Sword:
+      Possibility: 1
+      Description:
+      - "&2A sword that made by old fire mage"
+      Name:
+      - "Flame Sword"
+    Normal_Bow:
+      Possibility: 1
+      Description:
+      - "&2A long bow that made by old fire mage"
+      Name:
+      - "Flame Bow"
+  Tier:
+    Common:
+      Possibility: 65
+    Uncommon:
+      Possibility: 22
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 10
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+    Epic:
+      Possibility: 3
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:damage:12~16:20~25}"
+  - "{myitems_text_lorestats:hit_rate:10~15}"
+  - "{myitems_text_lorestats:penetration:20~32}"
+  - "{myitems_text_lorestats:critical_chance:10~13}"
+  - "{myitems_text_lorestats:critical_damage:1.35~1.5}"
+  - "{myitems_text_lorestats:pvp_damage:25~35}"
+  - "{myitems_text_lorestats:pve_damage:30~50}"
+  - "{myitems_text_lorestats:durability:1~2048:2048}"
+  - "&8&l&m==========&r&8&l[&r &2&lBuff&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_buff:jump:1~2}"
+  - "{myitems_text_buff:absorb:1~3}"
+  - "{myitems_text_buff:luck:1~7}"
+  - "&8&l&m==========&r&8&l[&r &2&lAbility&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_ability:blind:1~2:20~25}"
+  - "{myitems_text_ability:flame:1~3:20~25}"
+  - "{myitems_text_ability:dark_flame:1~5:10~15}"
+  - "&8&l&m==========&r&8&l[&r &2&lPower&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_power:special:shift_left:fissure:12~15}"
+  - "{myitems_text_power:special:shift_right:amaterasu:30~60}"
+  - "&8&l&m==========&r&8&l[&r &2&lElement&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_element:wind:20~30}"
+  - "{myitems_text_element:fire:25~50}"
+  
+Normal_Shield:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Normal_Shield:
+      Possibility: 1
+      Description:
+      - "&2A basic shield"
+      Name:
+      - "Normal Shield"
+  Tier:
+    Common:
+      Possibility: 80
+    Uncommon:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:defense:2~4}"
+  - "{myitems_text_lorestats:blockrate:1~2.5}"
+  - "{myitems_text_lorestats:blockamount:2.5~5}"
+  - "{myitems_text_lorestats:durability:1~256:256}"  
+  
+Advanced_Shield:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Advanced_Shield:
+      Possibility: 1
+      Description:
+      - "&2An advanced shield"
+      Name:
+      - "Advanced Shield"
+  Tier:
+    Common:
+      Possibility: 80
+    Uncommon:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:defense:4~7.5}"
+  - "{myitems_text_lorestats:blockrate:2~4}"
+  - "{myitems_text_lorestats:blockamount:3.5~7}"
+  - "{myitems_text_lorestats:durability:1~1024:1024}"  
+  
+Beginner_Armor:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Normal_Leather_Helmet:
+      Possibility: 1
+      Description:
+      - "&2A cap that used by begginers"
+      Name:
+      - "Beginner Cap"
+    Normal_Leather_Chestplate:
+      Possibility: 1
+      Description:
+      - "&2A tunic that used by begginers"
+      Name:
+      - "Beginner Tunic"
+    Normal_Leather_Leggings:
+      Possibility: 1
+      Description:
+      - "&2A pants that used by begginers"
+      Name:
+      - "Beginner Pants"
+    Normal_Leather_Boots:
+      Possibility: 1
+      Description:
+      - "&2A boots that used by begginers"
+      Name:
+      - "Beginner Boots"
+  Tier:
+    Common:
+      Possibility: 80
+    Uncommon:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:defense:3~5}"
+  - "{myitems_text_lorestats:health:2~4}"
+  - "{myitems_text_lorestats:durability:1~256:256}"  
+  
+Advanced_Armor:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Advanced_Leather_Helmet:
+      Possibility: 1
+      Description:
+      - "&2A cap that used by hunter"
+      Name:
+      - "Beginner Cap"
+    Advanced_Leather_Chestplate:
+      Possibility: 1
+      Description:
+      - "&2A tunic that used by hunter"
+      Name:
+      - "Beginner Tunic"
+    Advanced_Leather_Leggings:
+      Possibility: 1
+      Description:
+      - "&2A pants that used by hunter"
+      Name:
+      - "Beginner Pants"
+    Advanced_Leather_Boots:
+      Possibility: 1
+      Description:
+      - "&2A boots that used by hunter"
+      Name:
+      - "Beginner Boots"
+  Tier:
+    Common:
+      Possibility: 80
+    Uncommon:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+    Magic:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+  Lores:
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:defense:6~10}"
+  - "{myitems_text_lorestats:health:3~5}"
+  - "{myitems_text_lorestats:durability:1~1024:1024}"  
+  
+Godly_Armor:
+  Display_Name: "&8&l[ {tier_prefix}{name} &8&l]"
+  Type:
+    Normal_Chain_Helmet:
+      Possibility: 9
+      Description:
+      - "&2A helmet that forged by God"
+      Name:
+      - "Chain Helmet"
+    Normal_Chain_Chestplate:
+      Possibility: 9
+      Description:
+      - "&2A chestplate that forged by God"
+      Name:
+      - "Chain Chestplate"
+    Normal_Chain_Leggings:
+      Possibility: 9
+      Description:
+      - "&2A leggings that forged by God"
+      Name:
+      - "Chain Leggings"
+    Normal_Chain_Boots:
+      Possibility: 9
+      Description:
+      - "&2A boots that forged by God"
+      Name:
+      - "Chain Boots"
+    Shiny_Chain_Helmet:
+      Possibility: 1
+      Description:
+      - "&2A helmet that forged by God"
+      Name:
+      - "Shiny Chain Helmet"
+    Shiny_Chain_Chestplate:
+      Possibility: 1
+      Description:
+      - "&2A chestplate that forged by God"
+      Name:
+      - "Shiny Chain Chestplate"
+    Shiny_Chain_Leggings:
+      Possibility: 1
+      Description:
+      - "&2A leggings that forged by God"
+      Name:
+      - "Shiny Chain Leggings"
+    Shiny_Chain_Boots:
+      Possibility: 1
+      Description:
+      - "&2A boots that forged by God"
+      Name:
+      - "Shiny Chain Boots"
+  Tier:
+    Magic:
+      Possibility: 80
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - ""
+      - "{myitems_text_requirement_unbound}"
+    Epic:
+      Possibility: 15
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+      - ""
+      - "{myitems_text_requirement_unbound}"
+    Legendary:
+      Possibility: 5
+      Additional_Lores:
+      - "&8&l&m==========&r&8&l[&r &2&lSocket&r &8&l]&r&8&l&m=========="
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+      - "{myitems_text_socket_empty}"
+      - ""
+      - "{myitems_text_requirement_unbound}"
+  Lores:
+  - "{myitems_text_requirement_level:50}"
+  - "{myitems_text_requirement_permission:item.godly}"
+  - ""
+  - "&8&l&m==========&r&8&l[&r &2&lDesc&r &8&l]&r&8&l&m=========="
+  - "{description}"
+  - "&7Tier: {tier_prefix}{tier_name}"
+  - "&8&l&m==========&r&8&l[&r &2&lStatus&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_lorestats:defense:32~50}"
+  - "{myitems_text_lorestats:health:20~30}"
+  - "{myitems_text_lorestats:durability:512~1024:1024}"
+  - "&8&l&m==========&r&8&l[&r &2&lBuff&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_buff:absorb:2}"
+  - "{myitems_text_buff:luck:2}"  
+  - "&8&l&m==========&r&8&l[&r &2&lElement&r &8&l]&r&8&l&m=========="
+  - "{myitems_text_element:water:50~100}"
+  - "{myitems_text_element:wind:50~100}"

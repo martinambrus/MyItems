@@ -1,0 +1,107 @@
+#-----=====[ Format Item Tier ]=====-----#
+
+#<itemtype_id>:
+#  Prefix: <prefix>
+#  Name: <name>
+#  Modifier:
+#    <modifier_1>: <value>
+#    <modifier_2>: <value>
+
+#-----=====[ Stats Modifier ]=====-----#
+
+#Damage
+#Penetration
+#PvP_Damage
+#PvE_Damage
+#Critical_Chance
+#Critical_Damage
+#Hit_Rate
+#Defense
+#PvP_Defense
+#PvE_Defense
+#Health
+#Block_Amount
+#Block_Rate
+#Dodge_Rate
+
+#-----=====[ Item Tier Configuration ]=====-----#
+
+Common:
+  Prefix: "&f"
+  Name: "Common"
+    
+Uncommon:
+  Prefix: "&a"
+  Name: "Uncommon"
+  Modifier:
+    Damage: 1.1
+    Penetration: 1.1
+    PvP_Damage: 1.1
+    PvE_Damage: 1.1
+    Critical_Chance: 1.1
+    Critical_Damage: 1.1
+    Hit_Rate: 1.1
+    Defense: 1.1
+    PvP_Defense: 1.1
+    PvE_Defense: 1.1
+    Health: 1.1
+    Block_Amount: 1.1
+    Block_Rate: 1.1
+    Dodge_Rate: 1.1    
+    
+Magic:
+  Prefix: "&9"
+  Name: "Magic"
+  Modifier:
+    Damage: 1.2
+    Penetration: 1.2
+    PvP_Damage: 1.2
+    PvE_Damage: 1.2
+    Critical_Chance: 1.2
+    Critical_Damage: 1.2
+    Hit_Rate: 1.2
+    Defense: 1.2
+    PvP_Defense: 1.2
+    PvE_Defense: 1.2
+    Health: 1.2
+    Block_Amount: 1.2
+    Block_Rate: 1.2
+    Dodge_Rate: 1.2
+    
+Epic:
+  Prefix: "&5"
+  Name: "Epic"
+  Modifier:
+    Damage: 1.35
+    Penetration: 1.35
+    PvP_Damage: 1.35
+    PvE_Damage: 1.35
+    Critical_Chance: 1.35
+    Critical_Damage: 1.35
+    Hit_Rate: 1.35
+    Defense: 1.35
+    PvP_Defense: 1.35
+    PvE_Defense: 1.35
+    Health: 1.35
+    Block_Amount: 1.35
+    Block_Rate: 1.35
+    Dodge_Rate: 1.35
+    
+Legendary:
+  Prefix: "&6"
+  Name: "Legendary"
+  Modifier:
+    Damage: 1.6
+    Penetration: 1.6
+    PvP_Damage: 1.6
+    PvE_Damage: 1.6
+    Critical_Chance: 1.6
+    Critical_Damage: 1.6
+    Hit_Rate: 1.6
+    Defense: 1.6
+    PvP_Defense: 1.6
+    PvE_Defense: 1.6
+    Health: 1.6
+    Block_Amount: 1.6
+    Block_Rate: 1.6
+    Dodge_Rate: 1.6
